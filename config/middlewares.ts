@@ -19,12 +19,12 @@ export default [
     config: {
       origin: [
         'http://localhost:5173',               // للـ local dev
-        'https://full-stack-ecommerce-app-shopzy.vercel.app/' ,      // استبدليها بالدومين الحقيقي
+        'https://full-stack-ecommerce-app-shopzy.vercel.app' ,      // استبدليها بالدومين الحقيقي
         'https://shopzy-store.vercel.app',
 
       ],
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'DELETE','OPTIONS'],
+      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       credentials: true,
     },
   },
